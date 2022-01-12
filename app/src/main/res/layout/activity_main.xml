@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="com.example.myapp.Up" alias="UpOne"></import>
+        <variable
+            name="Up_bin"
+            type="UpOne" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Recyc"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="top"
+            android:background="#EA8BFF"
+            android:orientation="horizontal">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/Viewpaper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="#E086FA">
+
+        </androidx.viewpager2.widget.ViewPager2>
+
+
+    </LinearLayout>
+</layout>
